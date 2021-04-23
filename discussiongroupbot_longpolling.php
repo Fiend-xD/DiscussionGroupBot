@@ -3,7 +3,7 @@
 $config = json_decode('{
   "telegram":{
     "root": 123456789,
-    "token":"YOUR API TOKEN HERE"
+    "token":"1776453785:AAF_EjRVBaIrCCv15QpkHF44dDBGGyOzUFc"
   }
 }');
 // IMPORTANT: This is a beta version of the bot using long-polling instead of webhooks
@@ -87,7 +87,7 @@ while($running){
         if($msg == '/start' || $msg == '/start@discussiongroupbot'){
           $txt = '_Hello, nice to meet you!_'."\n"
           .'Make me admin in your group and I will automatically remove all forwarded posts from your linked channel so the group doesn\'t get filled with channel messages!'."\n"
-          .'Bot made by @PartyGuy and @FabianPastor';
+          .'Bot made by @FIEND_PRIVATE and @FIEND_XY';
           
           $bot->sendMessage([
             "chat_id" => $update->message->chat->id,
