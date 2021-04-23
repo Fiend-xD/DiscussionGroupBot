@@ -1,6 +1,6 @@
 <?php
 
-$bottoken = 'your_token_goes_here'; // Put your Telegram Bot token here
+$bottoken = '1776453785:AAF_EjRVBaIrCCv15QpkHF44dDBGGyOzUFc'; 
 
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
@@ -16,7 +16,7 @@ if($msg == '/start' || $msg == '/start@discussiongroupbot'){
   $txt = '_Hello, nice to meet you!_
 Make me admin in your group and I will automatically remove all forwarded posts from your linked channel so the group doesn\'t get filled with channel messages!
 
-*Bot dev:* @PartyGuy';
+*JOIN:* @FIEND_PRIVATE';
 
   $out = ['method'=>'sendMessage', 'chat_id' =>$chatID, 'text'=>$txt, 'parse_mode'=>'Markdown', 'reply_to_message_id'=>$msg_id];
 
